@@ -7,13 +7,13 @@ class TestTranslator(unittest.TestCase):
     def test_english_to_french(self):
         """Method for testing english_to_french function"""
         self.assertEqual(english_to_french(""), "")
-        self.assertEqual(english_to_french("Good morning"), "Bonjour")
-        self.assertNotEqual(english_to_french("Hello"), "Hello")
+        self.assertEqual(english_to_french("hello"), "bonjour")
+        self.assertNotEqual(english_to_french("hello"), "hello")
 
     def test_french_to_english(self):
         """Method for testing french_to_english function"""
         self.assertEqual(french_to_english(""), "")
-        self.assertEqual(french_to_english("Bonjour"), "Hello")
-        self.assertNotEqual(french_to_english("Bonjour"), "Bonjour")
+        self.assertEqual(french_to_english("bonjour"), "hello")
+        self.assertNotEqual(french_to_english("bonjour"), "bonjour")
 
 unittest.main()
