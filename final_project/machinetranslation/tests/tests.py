@@ -14,6 +14,6 @@ class TestTranslator(unittest.TestCase):
         """Method for testing french_to_english function"""
         self.assertEqual(french_to_english(""), "")
         self.assertEqual(french_to_english("Bonjour"), "Hello")
-        self.assertEqual(french_to_english("Bonjour"), "Hello")
+        self.assertNotEqual(french_to_english("Bonjour"), "Bonjour")
 
 unittest.main()
